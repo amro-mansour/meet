@@ -16,7 +16,7 @@ class Event extends Component {
     const { collapsed } = this.state;
     return (
       <div className="event">
-        <h1 className="title">{event.summery}</h1>
+        <h2 className="title">{event.summary}</h2>
         <p className="start-date">{event.start.dateTime} {event.start.timeZone}</p>
         <p className="location">{event.location}</p>
 
@@ -29,7 +29,7 @@ class Event extends Component {
 
         {!collapsed && (
           <div className="additional-details">
-            <h2>More info about this event</h2>
+            <h3>More info about this event</h3>
             <p className=".event-description">{event.description}</p>
           </div>
         )}
