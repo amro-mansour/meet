@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:500);
 
+
+* {
+  background-color: #F7F5EC;
+}
+
 .App {
   text-align: center;
   padding: 2% 5%;
@@ -82,7 +87,9 @@ input[type="number"] {
   padding: 10px 10px 35px;
   margin-bottom: 10px;
   text-align: left;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
+  border-style: double;
+  border-width: 5px;
   border-radius: 4px;
   position: relative;
 }
@@ -205,6 +212,30 @@ input[type="number"] {
   font-size: 14px;
   letter-spacing: 0.2px;
   font-family: "Roboto";
+}
+
+button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+
+  /* styles the button */
+  background-color: #9d1515;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.2s opacity;
+}
+
+button:hover,
+button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 

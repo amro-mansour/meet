@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './Event.css';
 
 class Event extends Component {
   state = {
@@ -29,7 +30,7 @@ class Event extends Component {
 
         {!collapsed && (
           <div className="additional-details">
-            <h3>More info about this event</h3>
+            <h3>Additional info about the event</h3>
             <p className=".event-description">{event.description}</p>
           </div>
         )}
