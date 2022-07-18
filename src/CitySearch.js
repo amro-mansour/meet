@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { InfoAlert } from './Alert';
-import './CitySearch.css';
 
 class CitySearch extends Component {
   state = {
@@ -43,7 +42,7 @@ class CitySearch extends Component {
   render() {
     return (
       <div className="CitySearch">
-        <h2 className="citySearch-header">Select your city:</h2>
+        <h2 className="citySearch-header">Choose your nearest city:</h2>
         <InfoAlert text={this.state.infoText} />
         <input
           type="text"
