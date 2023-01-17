@@ -18,7 +18,7 @@ class Event extends Component {
     return (
       <div className="event">
         <h2 className="title">{event.summary}</h2>
-        <p className="start-date">{event.start.dateTime} {event.start.timeZone}</p>
+        <p className="start-date">{new Date(event.start.dateTime).toString()} ({event.start.timeZone})</p>
         <p className="location">{event.location}</p>
 
         <button
